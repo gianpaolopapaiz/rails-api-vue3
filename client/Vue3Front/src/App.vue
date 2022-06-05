@@ -1,10 +1,14 @@
 <script setup>
-import AccountsPage from "./pages/AccountsPage.vue";
+  import AccountsPage from "./pages/AccountsPage.vue";
 </script>
 
 <template>
+  <h3>Navbar</h3>
+  <p>
+    <router-link to="/accounts">Accounts</router-link>
+  </p>
   <main>
-    <AccountsPage />
+    <router-view></router-view>
   </main>
 </template>
 
