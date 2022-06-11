@@ -3,7 +3,7 @@ import App from "./App.vue";
 import * as Vue from 'vue';
 import axios from 'axios';
 import VueAxios from 'vue-axios';
-import {createRouter, createWebHashHistory} from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 import HomePage from "./pages/HomePage.vue";
 import LoginPage from "./pages/LoginPage.vue";
 import AccountsPage from "./pages/AccountsPage.vue";

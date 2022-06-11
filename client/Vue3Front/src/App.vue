@@ -1,26 +1,23 @@
 <script setup>
-  import AccountsPage from "./pages/AccountsPage.vue";
+  import Navbar from "./components/Navbar.vue";
 </script>
 
 <template>
-  <h3>Navbar</h3>
-  <p>
-    <router-link to="/accounts">Accounts</router-link>
-  </p>
+  <Navbar/>
   <main>
-    <router-view></router-view>
+    <router-view/>
   </main>
 </template>
 
-<style>
+<style lang="scss">
 @import "./assets/base.css";
 
-#app {
+main {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-
+  padding: 1rem 2rem;
   font-weight: normal;
+  height: calc(100vh - 50px);
 }
 
 header {
@@ -46,17 +43,6 @@ a,
 }
 
 @media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
-
   header {
     display: flex;
     place-items: center;
@@ -72,5 +58,12 @@ a,
   .logo {
     margin: 0 2rem 0 0;
   }
+}
+
+.default-button {
+  border: 1px solid hsla(160, 100%, 37%, 1);
+  padding: 0.5rem 0.8rem;
+  background-color: var(--color-background);
+  color: var(--color-text);
 }
 </style>
